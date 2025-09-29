@@ -1,46 +1,57 @@
-import { Button } from '@/components/ui/button'; 
-import { ArrowRight, Star, Users, Building, TrendingUp } from 'lucide-react';
+import { useEffect, useState } from 'react';
+import { Star, Users, Building, TrendingUp } from 'lucide-react';
 import heroBg from '@/assets/qqq.jpeg';
-import heroBgMobile from '@/assets/aa.jpg';
+import heroBgMobile from '@/assets/qqq.jpeg';
 import LeadForm from '@/components/LeadForm';
 
 const Hero = () => {
-  const scrollToContact = () => {
-    const element = document.getElementById('contact');
-    element?.scrollIntoView({ behavior: 'smooth' });
-  };
+  const stats = [
+    { id: 1, value: 2000, label: 'Happy Families', icon: <Users size={32} className="text-secondary" /> },
+    { id: 2, value: 500, label: 'Properties Sold', icon: <Building size={32} className="text-secondary" /> },
+    { id: 3, value: 10, label: 'Years Experience', icon: <TrendingUp size={32} className="text-secondary" /> },
+    { id: 4, value: 4.9, label: 'Client Rating', icon: <Star size={32} className="text-secondary" /> },
+  ];
 
-  const scrollToProjects = () => {
-    const element = document.getElementById('projects');
-    element?.scrollIntoView({ behavior: 'smooth' });
-  };
+  const [counts, setCounts] = useState(stats.map(() => 0));
+
+  useEffect(() => {
+    const intervals = stats.map((stat, index) => {
+      return setInterval(() => {
+        setCounts((prev) => {
+          const newCounts = [...prev];
+          if (newCounts[index] < stat.value) {
+            newCounts[index] += Math.ceil(stat.value / 100);
+          }
+          return newCounts;
+        });
+      }, 30);
+    });
+
+    return () => intervals.forEach((interval) => clearInterval(interval));
+  }, []);
 
   return (
     <>
       {/* Hero Section */}
-      <section 
-        id="home" 
-        className="relative min-h-screen bg-cover bg-center bg-no-repeat flex items-center pt-20 md:pt-0"
-      >
+      <section id="home" className="relative min-h-screen flex items-center pt-20 md:pt-0">
         {/* Desktop Background */}
-        <div 
-          className="hidden md:block absolute inset-0 bg-cover bg-center" 
+        <div
+          className="hidden md:block absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: `url(${heroBg})` }}
         />
 
         {/* Mobile Background */}
-        <div
-          className="block md:hidden absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${heroBgMobile})` }}
-        />
+        <div className="block md:hidden absolute inset-0 ">
+        <img src={heroBgMobile} alt="Hero Mobile" className="w-full h-full object-cover" />
+        </div>
+
 
         {/* Overlay */}
         <div className="absolute inset-0 bg-gradient-to-r from-primary/50 to-primary/60"></div>
-        
+
         {/* Content */}
         <div className="relative z-10 container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            
             {/* Left side content */}
             <div>
               <h1 className="text-4xl md:text-6xl font-bold text-primary-foreground mb-6 leading-tight">
@@ -49,40 +60,21 @@ const Hero = () => {
               </h1>
 
               <p className="text-xl md:text-2xl text-primary-foreground/90 mb-8 max-w-2xl">
-                T and T Realty Services Private Ltd. <br /> Your trusted partner for premium 
+                T and T Realty Services Private Ltd. <br /> Your trusted partner for premium
                 residential and commercial properties in Delhi NCR since 2014.
               </p>
 
-              {/* Stats */}
-              <div className="grid grid-cols-2 md:grid-cols-2 gap-8">
-                <div className="text-center">
-                  <div className="flex items-center justify-center mb-2">
-                    <Users size={32} className="text-secondary" />
+              {/* Stats (Desktop Grid / Mobile Stack) */}
+              <div className="hidden md:grid grid-cols-2 gap-8">
+                {stats.map((stat, index) => (
+                  <div key={stat.id} className="text-center">
+                    <div className="flex items-center justify-center mb-2">{stat.icon}</div>
+                    <div className="text-3xl font-bold text-primary-foreground">
+                      {counts[index] >= stat.value ? stat.value + (stat.value > 10 ? '+' : '') : counts[index]}
+                    </div>
+                    <div className="text-primary-foreground/80 text-sm">{stat.label}</div>
                   </div>
-                  <div className="text-3xl font-bold text-primary-foreground">2000+</div>
-                  <div className="text-primary-foreground/80 text-sm">Happy Families</div>
-                </div>
-                <div className="text-center">
-                  <div className="flex items-center justify-center mb-2">
-                    <Building size={32} className="text-secondary" />
-                  </div>
-                  <div className="text-3xl font-bold text-primary-foreground">500+</div>
-                  <div className="text-primary-foreground/80 text-sm">Properties Sold</div>
-                </div>
-                <div className="text-center">
-                  <div className="flex items-center justify-center mb-2">
-                    <TrendingUp size={32} className="text-secondary" />
-                  </div>
-                  <div className="text-3xl font-bold text-primary-foreground">10+</div>
-                  <div className="text-primary-foreground/80 text-sm">Years Experience</div>
-                </div>
-                <div className="text-center">
-                  <div className="flex items-center justify-center mb-2">
-                    <Star size={32} className="text-secondary" />
-                  </div>
-                  <div className="text-3xl font-bold text-primary-foreground">4.9</div>
-                  <div className="text-primary-foreground/80 text-sm">Client Rating</div>
-                </div>
+                ))}
               </div>
             </div>
 
@@ -94,12 +86,26 @@ const Hero = () => {
         </div>
       </section>
 
-      {/* Mobile Form Section */}
-      <section className="block md:hidden bg-gray-50 py-8 px-4">
-        <div className="max-w-md mx-auto">
-          <LeadForm variant="compact" />
+{/* Mobile Stats + Form Section */}
+<section className="block md:hidden bg-white py-10 px-4 text-center">
+  {/* Hide stats on mobile – removed this block */}
+  {/* <div className="space-y-6">
+    {stats.map((stat, index) => (
+      <div key={stat.id}>
+        <div className="flex items-center justify-center mb-2">{stat.icon}</div>
+        <div className="text-3xl font-bold text-gray-900">
+          {counts[index] >= stat.value ? stat.value + (stat.value > 10 ? '+' : '') : counts[index]}
         </div>
-      </section>
+        <div className="text-gray-600 text-sm">{stat.label}</div>
+      </div>
+    ))}
+  </div> */}
+
+  {/* Mobile Form Only */}
+  <div className="max-w-md mx-auto">
+    <LeadForm variant="compact" />
+  </div>
+</section>
     </>
   );
 };
