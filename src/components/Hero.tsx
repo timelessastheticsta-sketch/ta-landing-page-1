@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Star, Users, Building, TrendingUp } from 'lucide-react';
-import heroBg from '@/assets/qqq.jpeg';
-import heroBgMobile from '@/assets/qqq.jpeg';
+import heroBg from '@/assets/filler.jpg';
+import heroBgMobile from '@/assets/mobile.jpg';
 import LeadForm from '@/components/LeadForm';
 
 const Hero = () => {
@@ -47,7 +47,7 @@ const Hero = () => {
 
 
         {/* Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/50 to-primary/60"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/40 to-primary/50"></div>
 
         {/* Content */}
         <div className="relative z-10 container mx-auto px-4">
@@ -55,13 +55,12 @@ const Hero = () => {
             {/* Left side content */}
             <div>
               <h1 className="text-4xl md:text-6xl font-bold text-primary-foreground mb-6 leading-tight">
-                Trusted Real Estate Consultants in{' '}
+              Empowering Aesthetics Enhancing Beauty{' '}
                 <span className="text-secondary">Gurgaon</span>
               </h1>
 
               <p className="text-xl md:text-2xl text-primary-foreground/90 mb-8 max-w-2xl">
-                T and T Realty Services Private Ltd. <br /> Your trusted partner for premium
-                residential and commercial properties in Delhi NCR since 2014.
+              Indian Premier Academy & Clinic For Advanced Aesthetic Excellence
               </p>
 
               {/* Stats (Desktop Grid / Mobile Stack) */}

@@ -1,118 +1,103 @@
-// src/components/About.tsx
-import { Card, CardContent } from '@/components/ui/card';
-import { TrendingUp, Building, Award, Shield } from 'lucide-react';
 import { motion } from "framer-motion";
-
-// ✅ Import your image
-import gurgaoImg from '@/assets/gurgao.webp';
+import aboutImg from "@/assets/about-us.webp";
+import { ChartTooltip } from "./ui/chart";
 
 const About = () => {
-  const whyChoose = [
-    {
-      icon: Award,
-      title: "Seasoned Professionals",
-      description: "T and T Realty brings a wealth of expertise to every client interaction with 20+ years of professional experience."
-    },
-    {
-      icon: TrendingUp,
-      title: "Market Knowledge",
-      description: "Our team possesses an intimate understanding of the Gurgaon real estate scene, staying ahead of trends and fluctuations."
-    },
-    {
-      icon: Building,
-      title: "Strategic Developer Collaborations",
-      description: "Our collaborations ensure clients gain access to the most coveted projects, amplifying investment potential."
-    },
-    {
-      icon: Shield,
-      title: "High Customer Satisfaction",
-      description: "Our consistently high customer satisfaction rate reflects our client-centric approach and exceptional service delivery."
-    }
-  ];
-
   return (
-    <section id="about" className="pt-24 pb-16 bg-background relative">
-      <div className="container mx-auto px-6">
-
-        {/* Section Header */}
-        <motion.div 
-          className="text-center mb-12"
-          initial={{ opacity: 0, y: 40 }}
+    <section
+      id="about-us"
+      className="py-20 bg-[#FAF8F6] relative overflow-hidden"
+    >
+      <div className="container mx-auto px-6 md:px-12">
+        {/* Section Title */}
+        <motion.h2
+          initial={{ opacity: 0, y: -30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
+          className="text-center text-4xl md:text-5xl font-extrabold text-[#3B2F2F] mb-6 font-playfair tracking-wider"
         >
-          <h2 className="text-4xl md:text-5xl font-extrabold tracking-wide mb-4">
-            About <span className="bg-gradient-to-r from-yellow-500 to-secondary bg-clip-text text-transparent">T and T Realty</span>
-          </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-yellow-500 to-secondary mx-auto mb-6 rounded-full"></div>
-          <p className="text-lg md:text-xl text-gray-800 max-w-3xl mx-auto leading-relaxed md:leading-relaxed font-light">
-            Reality Of Real Estate - T and T Realty Services Private Limited is a leading 
-            consultancy company incorporated in 2014 to drive Social and Economic Growth 
-            through <span className="font-semibold text-gray-900">REAL ESTATE</span>.
-          </p>
-        </motion.div>
+          Best Aesthetic Clinic in India
+        </motion.h2>
 
-        {/* Who We Are with Image */}
-        <div className="grid lg:grid-cols-2 gap-12 items-center mb-12">
-          {/* Left Content */}
-          <motion.div 
-            initial={{ opacity: 0, x: -60 }}
+        {/* Intro Paragraph */}
+        <motion.p
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 0.3 }}
+          className="text-center max-w-4xl mx-auto text-[#555555] mb-16 leading-relaxed font-lato"
+        >
+          Timeless Aesthetics seamlessly blends expert cosmetic treatments with
+          top-tier professional education. As a clinic, it delivers advanced
+          facial aesthetics, permanent makeup, and modern cosmetology, ensuring
+          clients receive refined, high-quality care. Meanwhile, the academy
+          empowers aspiring professionals through government-certified courses,
+          hands-on training, and global accreditation and affiliations around
+          the globe. Whether you're looking for transformative beauty treatments
+          or a prestigious learning experience, Timeless Aesthetics stands as a
+          hub of excellence in the industry.
+        </motion.p>
+
+        {/* Content Grid */}
+        <div className="grid md:grid-cols-2 gap-20 items-center">
+          {/* Left Image */}
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.9 }}
-            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="flex justify-center"
           >
-            <h3 className="text-3xl font-bold mb-6 tracking-wide">Who We Are</h3>
-            <p className="text-gray-800 mb-4 leading-relaxed md:leading-relaxed">
-              T and T Realty Services Pvt. Ltd. stands as a leading name in Real Estate 
-              Consulting across the Delhi NCR region. Incepted in Year 2014, with our 
-              proven track record, client-focused approach, and deep market expertise, 
-              we are the trusted partner for navigating the real estate landscape.
-            </p>
-            <p className="text-gray-800 mb-4 leading-relaxed md:leading-relaxed">
-              At T and T Realty, we specialize in a comprehensive range of services for 
-              buying, selling, and investing in real estate. We are committed to building 
-              partnerships, adding values to our assets & providing strong returns to our 
-              investors and associates.
-            </p>
-            <p className="text-gray-800 leading-relaxed md:leading-relaxed">
-              T and T derives its name from the <strong className="text-gray-900 font-semibold">Trust</strong> of its stakeholders 
-              and <strong className="text-gray-900 font-semibold">Transparency</strong> in all transactions. The commitment to these 
-              principles ensures that we deliver reliable and effective results for our clients.
-            </p>
-
-            {/* Stats */}
-            <div className="mt-10 grid grid-cols-2 gap-6">
-              <div className="text-center p-6 bg-gradient-to-r from-yellow-100 to-yellow-200 rounded-xl shadow-sm">
-                <div className="text-3xl font-bold text-yellow-700">20+</div>
-                <p className="text-sm text-gray-700 uppercase tracking-wide">Years Experience</p>
-              </div>
-              <div className="text-center p-6 bg-gradient-to-r from-yellow-100 to-yellow-200 rounded-xl shadow-sm">
-                <div className="text-3xl font-bold text-yellow-700">100%</div>
-                <p className="text-sm text-gray-700 uppercase tracking-wide">Transparent Deals</p>
-              </div>
-            </div>
+            <img
+              src={aboutImg}
+              alt="Dr. Shikha Baghi"
+              className="w-full max-w-md h-auto object-cover rounded-xl shadow-xl border-2 border-[#D4AF37] transform transition duration-500 hover:scale-105 hover:shadow-2xl"
+            />
           </motion.div>
 
-          {/* Right Image */}
-          <motion.div 
-            className="relative"
-            initial={{ opacity: 0, x: 60 }}
+          {/* Right Content */}
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.9 }}
-            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
           >
-            <div className="w-full h-[400px] rounded-2xl overflow-hidden shadow-2xl relative group">
-              <img 
-                src={gurgaoImg}
-                alt="About T and T Realty" 
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
+            <h3 className="text-[#D4AF37] text-xl md:text-xl font-semibold mb-2 tracking-wide uppercase inline-block font-playfair relative">
+              About
+              <span className="block w-16 h-1 bg-[#D4AF37] mt-2 rounded"></span>
+            </h3>
+
+            <h2 className="text-3xl md:text-4xl font-bold text-[#3B2F2F] mb-6 font-playfair">
+              Timeless Aesthetics
+            </h2>
+
+            <p className="text-[#555555] mb-6 leading-relaxed font-lato">
+              Timeless Aesthetics is a pioneer in Permanent Makeup, Cosmetology
+              & Facial Aesthetics in India led by{" "}
+              <span className="font-semibold">Dr. Shikha Baghi</span> (Founder
+              and Managing Director). She is BDS, MDS (Endodontist), and Master
+              Trainer of Permanent Makeup, Cosmetology and Facial Aesthetics.
+              She is the first Diamond Trainer of the American Academy Of
+              Micropigmentation (AAM).
+            </p>
+
+            <p className="text-[#555555] leading-relaxed font-lato">
+              Timeless Aesthetics in its business development, sales, and
+              marketing is led by{" "}
+              <span className="font-semibold">Mr. Ashish Thapar</span> (Founder
+              & Managing Director). He has a B.E. in Production Engineering and
+              is the Founder and Managing Director of T and T Realty Services
+              Pvt. Ltd.
+            </p>
+
+            {/* Button */}
+            <div className="mt-8">
+              <a
+                href="/about"
+                className="inline-block px-8 py-3 border border-[#D4AF37] text-[#D4AF37] rounded-full font-medium hover:bg-[#D4AF37] hover:text-white transition duration-300 transform hover:scale-110 shadow-md"
+              >
+                Know More
+              </a>
             </div>
           </motion.div>
         </div>
-
       </div>
     </section>
   );

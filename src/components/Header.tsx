@@ -41,6 +41,16 @@ const Header = () => {
               >
                 About Us
               </button>
+
+              
+<button
+  onClick={() => scrollToSection('projects')}
+  className="text-white hover:text-[#FCBD01] transition-smooth"
+>
+  Courses
+</button>
+
+
               <button
                 onClick={() => scrollToSection('services')}
                 className="text-white hover:text-[#FCBD01] transition-smooth"
@@ -54,12 +64,6 @@ const Header = () => {
 
 
 
-<button
-  onClick={() => scrollToSection('projects')}
-  className="text-white hover:text-[#FCBD01] transition-smooth"
->
-  Property
-</button>
 <button
   onClick={() => scrollToSection('contact')}
   className="text-white hover:text-[#FCBD01] transition-smooth"
@@ -76,7 +80,7 @@ const Header = () => {
     href="tel:918750057070"
     className="text-black no-underline hover:text-black visited:text-black"
   >
-    Call Now 8088113333
+    Call Now 
   </a>
 </Button>
 
