@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 const whyChoose = [
   {
     icon: HeartPulse,
-    title: "Expert DAaaAAaASASermatologists",
+    title: "Expert Dermatologists",
     description:
       "Our certified and highly experienced dermatologists ensure safe, effective, and customized treatments for every skin type.",
   },
