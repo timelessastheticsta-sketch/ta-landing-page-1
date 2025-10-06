@@ -129,7 +129,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-white/20 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
           <div>
-            © {currentYear} | T&T REALTY | All Rights Reserved.
+            © {currentYear} | Timeles Aaesthetics | All Rights Reserved.
           </div>
           <div className="flex gap-4 mt-3 md:mt-0">
             <a href="/privacy-policy" className="hover:text-[#A8D5BA] transition-colors">
