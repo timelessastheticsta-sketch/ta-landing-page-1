@@ -131,7 +131,7 @@ const Services = () => {
             onClick={scrollToContact}
             className="bg-black text-white hover:bg-gray-800 font-semibold transition-all"
           >
-            Enroll or Book Now
+            Apply Now
             <ArrowRight className="ml-2" size={20} />
           </Button>
         </motion.div>
