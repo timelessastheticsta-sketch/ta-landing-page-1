@@ -7,7 +7,7 @@ import LeadForm from '@/components/LeadForm';
 const Hero = () => {
   const stats = [
     { id: 1, value: 2000, label: 'Happy Families', icon: <Users size={32} className="text-secondary" /> },
-    { id: 2, value: 500, label: 'Properties Sold', icon: <Building size={32} className="text-secondary" /> },
+    { id: 2, value: 500, label: 'Courses Sold', icon: <Building size={32} className="text-secondary" /> },
     { id: 3, value: 10, label: 'Years Experience', icon: <TrendingUp size={32} className="text-secondary" /> },
     { id: 4, value: 4.9, label: 'Client Rating', icon: <Star size={32} className="text-secondary" /> },
   ];
@@ -55,12 +55,13 @@ const Hero = () => {
             {/* Left side content */}
             <div>
               <h1 className="text-4xl md:text-6xl font-bold text-primary-foreground mb-6 leading-tight">
-              Empowering Aesthetics Enhancing Beauty{' '}
-                <span className="text-secondary">Gurgaon</span>
+              Masters in Permanent Makeup Course{' '}
+                <span className="text-secondary">Timeless Aesthetics</span>
               </h1>
 
               <p className="text-xl md:text-2xl text-primary-foreground/90 mb-8 max-w-2xl">
-              Indian Premier Academy & Clinic For Advanced Aesthetic Excellence
+              Become a Certified Permanent Makeup Artist
+
               </p>
 
               {/* Stats (Desktop Grid / Mobile Stack) */}

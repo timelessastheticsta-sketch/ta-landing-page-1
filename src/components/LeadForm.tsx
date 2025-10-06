@@ -243,15 +243,15 @@ const LeadForm = ({
                 </CardContent>
               </Card>
 
-              {/* Why Choose Us */}
+              {/* Why Choose Us - Updated */}
               <div className="p-6 rounded-2xl text-white shadow-lg bg-gradient-to-r from-black to-gray-800">
                 <h3 className="text-xl font-semibold mb-3">Why Choose Timeless Aesthetics?</h3>
                 <ul className="space-y-2 text-sm">
-                  <li>✓ Advanced Laser & Skin Treatments</li>
-                  <li>✓ Personalized Consultation</li>
-                  <li>✓ Safe, FDA-Approved Equipment</li>
-                  <li>✓ Highly Trained Dermatologists</li>
-                  <li>✓ Luxurious & Hygienic Clinic Environment</li>
+                  <li>✅ Internationally trained & certified faculty</li>
+                  <li>✅ Practical hands-on training with live models</li>
+                  <li>✅ Small batches for personal mentorship</li>
+                  <li>✅ State-of-the-art equipment & safe practices</li>
+                  <li>✅ Career guidance & placement support</li>
                 </ul>
               </div>
             </div>
