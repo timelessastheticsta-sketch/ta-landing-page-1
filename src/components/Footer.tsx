@@ -87,7 +87,7 @@ const Footer = () => {
                 </Button>
               </a>
               <a
-                href="https://www.youtube.com/c/TandTRealty"
+                href="https://www.youtube.com/@timelessaesthetics"
                 target="_blank"
                 rel="noopener noreferrer"
               >
