@@ -59,7 +59,7 @@ const Index = () => {
       <Footer />
 
 <a
-  href="https://wa.me/7772840890?text=Hi%20There!"
+  href="https://wa.me/7289863239?text=Hi%20There!"
   target="_blank"
   className="fixed w-16 h-16 bottom-16 right-12 bg-green-500 text-white rounded-full flex items-center justify-center cursor-pointer z-50 shadow-lg hover:shadow-2xl transform hover:scale-110 transition-all duration-300"
 >
