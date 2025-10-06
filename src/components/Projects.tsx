@@ -81,7 +81,7 @@ const Projects = () => {
                   onClick={() => scrollToSection('contact')}
                   className="mt-5 w-full bg-black text-white font-semibold tracking-wide py-4 text-lg rounded-md shadow-md hover:bg-[#FCBD01] hover:text-black transition-all duration-300"
                 >
-                  Book a Site Visit  
+Register Now for the Upcoming Batch
                 </Button>
               </CardContent>
             </Card>

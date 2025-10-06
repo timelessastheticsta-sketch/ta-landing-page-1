@@ -99,8 +99,8 @@ const LeadForm = ({
     >
       <CardHeader>
         <CardTitle className="text-3xl font-bold text-black">
-          Book Your Consultation
-        </CardTitle>
+        Register Now for the Upcoming Batch
+                </CardTitle>
         <CardDescription className="text-base text-gray-600">
           Fill in your details, and our beauty expert will connect with you shortly ✨
         </CardDescription>
