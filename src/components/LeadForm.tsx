@@ -161,7 +161,7 @@ const LeadForm = ({
           <div>
             <Label htmlFor="message" className="flex items-center gap-2 font-semibold">
               <MessageSquare size={16} />
-              Treatment / Concern
+              Message
             </Label>
             <Textarea
               id="message"

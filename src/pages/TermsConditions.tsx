@@ -18,47 +18,45 @@ const TermsConditions = () => {
             <section>
               <h2 className="text-2xl font-semibold mb-4">Agreement to Terms</h2>
               <p>
-                By accessing our website, engaging with our LinkedIn advertisements, or using our services, 
-                you agree to be bound by these Terms and Conditions ("Terms"). T and T Realty Services Private 
-                Limited ("Company," "we," "us," or "our") provides real estate consultation services in accordance 
-                with these Terms.
+                By accessing our website, booking an appointment, or using our services, you agree to comply with 
+                these Terms and Conditions ("Terms"). Timeless Aesthetic ("Company," "we," "us," or "our") operates 
+                in accordance with these Terms to ensure a transparent and satisfactory client experience.
               </p>
             </section>
 
             <section>
               <h2 className="text-2xl font-semibold mb-4">Company Information</h2>
               <div className="bg-muted p-4 rounded-lg">
-                <p><strong>T and T Realty Services Private Limited</strong></p>
-                <p>Incorporated: 2014</p>
-                <p>HARERA Registration Number: /Ext1/2023/222</p>
+                <p><strong>Timeless Aesthetic</strong></p>
+                <p>Incorporated: 2022</p>
+                <p>Type: Aesthetic & Cosmetic Service Provider</p>
                 <p>Address: 2nd Floor, Ameya One, Golf Course Road, Sector 42, Gurgaon, Haryana 122022</p>
-                <p>Contact: +91 8088113333 | info@tandtrealty.in</p>
+                <p>Contact: +91 8088113333 | info@timelessaesthetic.in</p>
               </div>
             </section>
 
             <section>
               <h2 className="text-2xl font-semibold mb-4">Services Offered</h2>
-              <p>Our company provides the following real estate services:</p>
+              <p>We provide a wide range of professional aesthetic and wellness services, including:</p>
               <ul className="list-disc pl-6 space-y-1">
-                <li>Property consultation and advisory services</li>
-                <li>Residential and commercial property sales</li>
-                <li>Investment guidance and market analysis</li>
-                <li>Property management and after-sales support</li>
-                <li>RERA-compliant transaction facilitation</li>
+                <li>Skin rejuvenation and anti-aging treatments</li>
+                <li>Laser hair removal and skincare therapies</li>
+                <li>Botox, fillers, and cosmetic dermatology</li>
+                <li>Body contouring and weight management solutions</li>
+                <li>Hair restoration and scalp treatments</li>
               </ul>
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold mb-4">LinkedIn Advertising Terms</h2>
+              <h2 className="text-2xl font-semibold mb-4">Appointments and Bookings</h2>
               <p>
-                When you engage with our LinkedIn advertisements or promotional content:
+                When you book an appointment with Timeless Aesthetic (online, via call, or in person):
               </p>
               <ul className="list-disc pl-6 space-y-1">
-                <li>All property information is subject to developer terms and availability</li>
-                <li>Pricing and offers mentioned are indicative and subject to change</li>
-                <li>Lead information collected will be used for legitimate business purposes only</li>
-                <li>We comply with LinkedIn's advertising policies and professional standards</li>
-                <li>Your LinkedIn profile data may be accessed to provide personalized services</li>
+                <li>Appointment confirmations will be sent via email or WhatsApp</li>
+                <li>Rescheduling or cancellations should be made at least 24 hours in advance</li>
+                <li>Late arrivals may result in reduced treatment time or rescheduling</li>
+                <li>Missed appointments without notice may incur cancellation charges</li>
               </ul>
             </section>
 
@@ -66,119 +64,100 @@ const TermsConditions = () => {
               <h2 className="text-2xl font-semibold mb-4">Client Responsibilities</h2>
               <p>As a client, you agree to:</p>
               <ul className="list-disc pl-6 space-y-1">
-                <li>Provide accurate and complete information about your requirements</li>
-                <li>Conduct independent due diligence before making investment decisions</li>
-                <li>Comply with all applicable laws and regulations</li>
-                <li>Respect intellectual property rights of all parties</li>
-                <li>Pay applicable fees and charges as agreed</li>
+                <li>Provide accurate and complete information about your health and medical history</li>
+                <li>Follow pre- and post-treatment care instructions provided by our specialists</li>
+                <li>Inform our staff of any allergies, sensitivities, or medications</li>
+                <li>Make payments as per agreed packages and treatment terms</li>
+                <li>Respect the privacy and professionalism of our staff</li>
               </ul>
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold mb-4">Property Transactions</h2>
-              <h3 className="text-xl font-medium mb-2">RERA Compliance</h3>
-              <p>
-                All property transactions facilitated by us comply with the Real Estate (Regulation and Development) 
-                Act, 2016 (RERA). We ensure that all developers are RERA-registered and provide necessary disclosures.
-              </p>
-              
-              <h3 className="text-xl font-medium mb-2 mt-4">Investment Risks</h3>
-              <p>
-                Real estate investments are subject to market risks. Past performance does not guarantee future returns. 
-                Clients are advised to:
-              </p>
+              <h2 className="text-2xl font-semibold mb-4">Payments and Refunds</h2>
               <ul className="list-disc pl-6 space-y-1">
-                <li>Verify all project approvals and legal clearances</li>
-                <li>Understand payment schedules and possession timelines</li>
-                <li>Review all terms and conditions before signing agreements</li>
-                <li>Consult legal and financial advisors independently</li>
+                <li>All service charges and consultation fees must be paid in full before or at the time of service</li>
+                <li>Advance payments are non-transferable</li>
+                <li>Refunds are only applicable in case of medical contraindications verified by our doctors</li>
+                <li>Discounts and offers are subject to change without prior notice</li>
+                <li>Payments should be made only through authorized company channels</li>
               </ul>
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold mb-4">Fees and Payments</h2>
-              <ul className="list-disc pl-6 space-y-1">
-                <li>Consultation fees are as mutually agreed upon</li>
-                <li>Brokerage charges are as per industry standards and market practices</li>
-                <li>All payments should be made through official company accounts</li>
-                <li>We do not accept cash payments beyond legally permissible limits</li>
-                <li>Refund policies are subject to individual agreement terms</li>
-              </ul>
+              <h2 className="text-2xl font-semibold mb-4">Medical Disclaimer</h2>
+              <p>
+                All treatments at Timeless Aesthetic are performed by qualified professionals using approved 
+                products and technologies. However, individual results may vary based on skin type, age, and 
+                medical history. We do not guarantee identical outcomes for every client.
+              </p>
+              <p>
+                Clients are advised to consult our certified practitioners before undergoing any treatment. 
+                The company will not be held liable for complications arising from undisclosed medical conditions 
+                or failure to follow care instructions.
+              </p>
             </section>
 
             <section>
               <h2 className="text-2xl font-semibold mb-4">Intellectual Property</h2>
               <p>
-                All website content, marketing materials, property brochures, and promotional content are protected 
-                by intellectual property laws. Unauthorized use, reproduction, or distribution is prohibited.
+                All website content, logos, service descriptions, images, and promotional materials are the 
+                intellectual property of Timeless Aesthetic. Unauthorized use, reproduction, or modification 
+                of this content is strictly prohibited.
               </p>
             </section>
 
             <section>
               <h2 className="text-2xl font-semibold mb-4">Limitation of Liability</h2>
               <p>
-                Our liability is limited to the consultation and facilitation services provided. We are not liable for:
+                Timeless Aesthetic shall not be liable for:
               </p>
               <ul className="list-disc pl-6 space-y-1">
-                <li>Delays in project completion by developers</li>
-                <li>Changes in government policies affecting property values</li>
-                <li>Market fluctuations and investment risks</li>
-                <li>Third-party service provider failures</li>
-                <li>Force majeure events and natural calamities</li>
+                <li>Adverse reactions caused by undisclosed allergies or medical conditions</li>
+                <li>Delays due to equipment maintenance or unforeseen technical issues</li>
+                <li>Results differing from client expectations</li>
+                <li>Third-party product or service failures</li>
+                <li>Force majeure events such as natural disasters or pandemics</li>
               </ul>
+            </section>
+
+            <section>
+              <h2 className="text-2xl font-semibold mb-4">Privacy and Data Protection</h2>
+              <p>
+                We value your privacy. All client data, including health information and personal details, 
+                is kept confidential and used solely for providing services and improving client experience. 
+                We comply with all applicable data protection laws.
+              </p>
             </section>
 
             <section>
               <h2 className="text-2xl font-semibold mb-4">Dispute Resolution</h2>
               <p>
-                Any disputes arising from these Terms or our services shall be resolved through:
+                In the event of any disputes, both parties agree to attempt resolution through:
               </p>
               <ol className="list-decimal pl-6 space-y-1">
-                <li>Good faith negotiations between the parties</li>
-                <li>Mediation through mutually agreed mediators</li>
+                <li>Informal discussions and good faith negotiations</li>
+                <li>Mediation by a neutral third party if required</li>
                 <li>Arbitration under the Arbitration and Conciliation Act, 2015</li>
                 <li>Courts in Gurgaon, Haryana shall have exclusive jurisdiction</li>
               </ol>
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold mb-4">Professional Standards</h2>
-              <p>
-                We adhere to the highest professional standards in real estate consulting:
-              </p>
-              <ul className="list-disc pl-6 space-y-1">
-                <li>Transparent communication and ethical business practices</li>
-                <li>Compliance with RERA and other applicable regulations</li>
-                <li>Confidentiality of client information and requirements</li>
-                <li>Continuous professional development and market knowledge</li>
-                <li>Fair dealing with all stakeholders</li>
-              </ul>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-semibold mb-4">Termination</h2>
-              <p>
-                Either party may terminate the service relationship with appropriate notice as specified in 
-                individual agreements. Termination does not affect obligations that have already accrued.
-              </p>
-            </section>
-
-            <section>
               <h2 className="text-2xl font-semibold mb-4">Amendments</h2>
               <p>
-                These Terms may be updated periodically to reflect changes in our services or legal requirements. 
-                Updated terms will be posted on our website with effective dates. Continued engagement with our 
-                services constitutes acceptance of updated terms.
+                These Terms may be updated periodically to reflect changes in our policies, services, or 
+                legal obligations. Updated terms will be posted on our website, and continued use of our 
+                services constitutes acceptance of the revised Terms.
               </p>
             </section>
 
             <section>
               <h2 className="text-2xl font-semibold mb-4">Contact Information</h2>
-              <p>For questions regarding these Terms, contact us:</p>
+              <p>For questions regarding these Terms, please contact us:</p>
               <div className="bg-muted p-4 rounded-lg">
-                <p><strong>T and T Realty Services Private Limited</strong></p>
-                <p>Legal Department</p>
-                <p>Email: info@tandtrealty.in</p>
+                <p><strong>Timeless Aesthetic</strong></p>
+                <p>Client Relations Department</p>
+                <p>Email: info@timelessaesthetic.in</p>
                 <p>Phone: +91 8088113333</p>
                 <p>Business Hours: Monday to Saturday, 9:00 AM to 6:00 PM</p>
               </div>
