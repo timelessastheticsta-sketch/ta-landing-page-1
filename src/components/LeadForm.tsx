@@ -151,7 +151,7 @@ const LeadForm = ({
               type="tel"
               value={formData.phone}
               onChange={(e) => handleChange("phone", e.target.value)}
-              placeholder="+91 9876543210"
+              placeholder="+91 9654009966"
               required
               className="mt-2 rounded-lg focus:ring-2 focus:ring-black transition"
             />
@@ -221,14 +221,14 @@ const LeadForm = ({
                     <Phone className="text-black" size={20} />
                     <div>
                       <div className="font-semibold">Call Us</div>
-                      <div className="text-gray-600">+91 98765 43210</div>
+                      <div className="text-gray-600">+91 96540 09966</div>
                     </div>
                   </div>
                   <div className="flex items-center gap-3">
                     <Mail className="text-black" size={20} />
                     <div>
                       <div className="font-semibold">Email</div>
-                      <div className="text-gray-600">hello@timelessaesthetics.in</div>
+                      <div className="text-gray-600">info@timelessaesthetics.in</div>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">

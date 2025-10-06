@@ -77,7 +77,7 @@ const Header = () => {
   className="bg-[#FCBD01] text-black transition-smooth hover:bg-[#FCBD01]"
 >
   <a
-    href="tel:918750057070"
+    href="tel:919654009966"
     className="text-black no-underline hover:text-black visited:text-black"
   >
     Call Now 
@@ -132,7 +132,7 @@ const Header = () => {
   className="bg-[#FCBD01] text-black transition-smooth hover:bg-[#FCBD01] w-full"
 >
   <a
-    href="tel:918750057070"
+    href="tel:919654009966"
     className="text-black no-underline hover:text-black visited:text-black"
   >
     Call Now 8088113333

@@ -52,12 +52,13 @@ const Footer = () => {
 
           {/* Property Types */}
           <div>
-            <h4 className="font-semibold text-lg mb-4 border-b border-white/20 pb-2">Property Types</h4>
+            <h4 className="font-semibold text-lg mb-4 border-b border-white/20 pb-2">Courses</h4>
             <ul className="space-y-2 text-sm text-gray-300">
-              <li>Residential Properties</li>
-              <li>Commercial Properties</li>
-              <li>Retail Shops</li>
-              <li>SCO Plots</li>
+              <li>Permanent Makeup</li>
+              <li>Cosmetology</li>
+              <li>Facial Aesthetics</li>
+              <li>Fellowship Courses
+              </li>
             </ul>
           </div>
 
@@ -72,7 +73,7 @@ const Footer = () => {
                 Gurgaon, Haryana 122022
               </div>
             </div>
-            <div className="text-sm text-gray-300 mb-4">HARERA No: /Ext1/2023/222</div>
+            <div className="text-sm text-gray-300 mb-4"></div>
 
             {/* Social Links */}
             <div className="flex gap-3 mt-2">
@@ -95,7 +96,7 @@ const Footer = () => {
                 </Button>
               </a>
               <a
-                href="https://x.com/tntrealtyin"
+                href="https://x.com/tastheticsindia"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -104,7 +105,7 @@ const Footer = () => {
                 </Button>
               </a>
               <a
-                href="https://www.facebook.com/tntrealtyin"
+                href="https://www.facebook.com/timelessaestheticsindia"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -113,7 +114,7 @@ const Footer = () => {
                 </Button>
               </a>
               <a
-                href="https://www.instagram.com/tntrealtyin/"
+                href="https://www.instagram.com/timelessaestheticsindia/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
