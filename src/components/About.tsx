@@ -5,7 +5,7 @@ import { ChartTooltip } from "./ui/chart";
 const About = () => {
   return (
     <section
-      id="about-us"
+      id="about"
       className="py-20 bg-[#FAF8F6] relative overflow-hidden"
     >
       <div className="container mx-auto px-6 md:px-12">
