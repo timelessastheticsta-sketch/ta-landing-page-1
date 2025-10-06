@@ -180,7 +180,7 @@ const LeadForm = ({
             className="w-full py-3 text-lg font-semibold rounded-lg text-white hover:opacity-90 transition relative overflow-hidden bg-black"
           >
             <span className="relative z-10">
-              {isSubmitting ? "Submitting..." : "🖤 Book My Slot"}
+              {isSubmitting ? "Submitting..." : "🖤 Book Now"}
             </span>
             <div className="absolute inset-0 bg-white/20 blur-md opacity-30 animate-pulse"></div>
           </Button>

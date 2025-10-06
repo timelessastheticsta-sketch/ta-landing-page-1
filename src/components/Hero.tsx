@@ -43,11 +43,14 @@ const Hero = () => {
   />
 </div>
 
-
-        {/* Mobile Background */}
-        <div className="block md:hidden absolute inset-0 ">
-        <img src={heroBgMobile} alt="Hero Mobile" className="w-full h-full object-cover" />
-        </div>
+{/* Mobile Background */}
+<div className="block md:hidden absolute inset-0 bg-black">
+  <img
+    src={heroBgMobile}
+    alt="Hero Mobile"
+    className="w-full h-full object-contain object-center"
+  />
+</div>
 
 
         {/* Overlay */}
