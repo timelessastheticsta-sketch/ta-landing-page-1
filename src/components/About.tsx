@@ -90,8 +90,8 @@ const About = () => {
             {/* Button */}
             <div className="mt-8">
               <a
-                href="/about"
-                className="inline-block px-8 py-3 border border-[#D4AF37] text-[#D4AF37] rounded-full font-medium hover:bg-[#D4AF37] hover:text-white transition duration-300 transform hover:scale-110 shadow-md"
+    href="https://www.timelessaesthetics.in/"
+    className="inline-block px-8 py-3 border border-[#D4AF37] text-[#D4AF37] rounded-full font-medium hover:bg-[#D4AF37] hover:text-white transition duration-300 transform hover:scale-110 shadow-md"
               >
                 Know More
               </a>

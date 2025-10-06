@@ -11,13 +11,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { useToast } from "@/hooks/use-toast";
-import {
-  Phone,
-  Mail,
-  User,
-  MessageSquare,
-  CheckCircle,
-} from "lucide-react";
+import { Phone, Mail, User, MessageSquare, CheckCircle } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 interface FormData {
@@ -67,15 +61,14 @@ const LeadForm = ({
       const res = await fetch("https://tnt-leads-backend.onrender.com/api/leads", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ ...formData, source: "website-landing" }),
+        body: JSON.stringify({ ...formData, source: "timeless-landing" }),
       });
 
-      const data = await res.json();
-      console.log("API response:", data);
+      await res.json();
 
       toast({
-        title: "Thank you for your interest! 🎉",
-        description: "Our team will contact you within 24 hours.",
+        title: "Thank you for connecting 🖤",
+        description: "Our aesthetic consultant will reach out within 24 hours.",
       });
 
       setFormData({ name: "", email: "", phone: "", message: "" });
@@ -105,11 +98,11 @@ const LeadForm = ({
       )}
     >
       <CardHeader>
-        <CardTitle className="text-2xl font-bold" style={{ color: "#000000" }}>
-          Request a Callback
+        <CardTitle className="text-3xl font-bold text-black">
+          Book Your Consultation
         </CardTitle>
         <CardDescription className="text-base text-gray-600">
-          Fill out the form below and our team will reach out within 24 hours 🚀
+          Fill in your details, and our beauty expert will connect with you shortly ✨
         </CardDescription>
       </CardHeader>
       <CardContent>
@@ -125,9 +118,9 @@ const LeadForm = ({
               type="text"
               value={formData.name}
               onChange={(e) => handleChange("name", e.target.value)}
-              placeholder="John Doe"
+              placeholder="e.g., Priya Sharma"
               required
-              className="mt-2 rounded-lg focus:ring-2 focus:ring-black/60 transition"
+              className="mt-2 rounded-lg focus:ring-2 focus:ring-black transition"
             />
           </div>
 
@@ -143,7 +136,7 @@ const LeadForm = ({
               value={formData.email}
               onChange={(e) => handleChange("email", e.target.value)}
               placeholder="your@email.com"
-              className="mt-2 rounded-lg focus:ring-2 focus:ring-black/60 transition"
+              className="mt-2 rounded-lg focus:ring-2 focus:ring-black transition"
             />
           </div>
 
@@ -160,7 +153,7 @@ const LeadForm = ({
               onChange={(e) => handleChange("phone", e.target.value)}
               placeholder="+91 9876543210"
               required
-              className="mt-2 rounded-lg focus:ring-2 focus:ring-black/60 transition"
+              className="mt-2 rounded-lg focus:ring-2 focus:ring-black transition"
             />
           </div>
 
@@ -168,15 +161,15 @@ const LeadForm = ({
           <div>
             <Label htmlFor="message" className="flex items-center gap-2 font-semibold">
               <MessageSquare size={16} />
-              Your Requirements
+              Treatment / Concern
             </Label>
             <Textarea
               id="message"
               value={formData.message}
               onChange={(e) => handleChange("message", e.target.value)}
-              placeholder="Budget, location preference, property type..."
+              placeholder="E.g., acne treatment, laser hair removal, skin glow..."
               rows={4}
-              className="mt-2 rounded-lg focus:ring-2 focus:ring-black/60 transition"
+              className="mt-2 rounded-lg focus:ring-2 focus:ring-black transition"
             />
           </div>
 
@@ -184,15 +177,13 @@ const LeadForm = ({
           <Button
             type="submit"
             disabled={isSubmitting}
-            className="w-full py-3 text-lg font-semibold rounded-lg text-white hover:opacity-90 transition relative overflow-hidden"
-            style={{ backgroundColor: "#000000" }}
+            className="w-full py-3 text-lg font-semibold rounded-lg text-white hover:opacity-90 transition relative overflow-hidden bg-black"
           >
             <span className="relative z-10">
-              {isSubmitting ? "Submitting..." : "✨ Send My Request"}
+              {isSubmitting ? "Submitting..." : "🖤 Book My Slot"}
             </span>
             <div className="absolute inset-0 bg-white/20 blur-md opacity-30 animate-pulse"></div>
           </Button>
-
         </form>
       </CardContent>
     </Card>
@@ -201,64 +192,66 @@ const LeadForm = ({
   if (variant === "compact") return FormCard;
 
   return (
-    <section id="contact" className="py-24 bg-gradient-to-b from-gray-50 to-white">
+    <section id="contact" className="py-24 bg-gradient-to-b from-gray-50 via-gray-100 to-white">
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto">
           {/* Heading */}
           <div className="text-center mb-14">
-            <h2 className="text-4xl md:text-5xl font-extrabold text-black">
-              Ready to Find Your Dream Property?
+            <h2 className="text-5xl font-extrabold text-black">
+              Start Your Beauty Journey Today
             </h2>
             <p className="text-lg text-gray-600 mt-4 max-w-2xl mx-auto">
-              Get a free consultation with our expert team. Share your requirements
-              and let us help you find the perfect property investment.
+              Connect with our certified experts to discover personalized treatments
+              that enhance your natural glow and confidence ✨
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-10">
-            {/* Left - Info */}
+            {/* Left Info Section */}
             <div className="space-y-6">
-              <Card className="rounded-2xl shadow-lg bg-white/80 backdrop-blur-md border">
+              <Card className="rounded-2xl shadow-lg bg-white/90 backdrop-blur-md border border-gray-200">
                 <CardHeader>
-                  <CardTitle className="text-2xl">📞 Get In Touch</CardTitle>
+                  <CardTitle className="text-2xl text-black">📞 Contact Us</CardTitle>
                   <CardDescription>
-                    Contact our experienced team for personalized real estate solutions
+                    Our experts are here to assist you with your skincare goals.
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="flex items-center gap-3">
                     <Phone className="text-black" size={20} />
                     <div>
-                      <div className="font-semibold">Call Us Now</div>
-                      <div className="text-gray-600">+91 8088113333</div>
+                      <div className="font-semibold">Call Us</div>
+                      <div className="text-gray-600">+91 98765 43210</div>
                     </div>
                   </div>
                   <div className="flex items-center gap-3">
                     <Mail className="text-black" size={20} />
                     <div>
-                      <div className="font-semibold">Email Us</div>
-                      <div className="text-gray-600">info@tandtrealty.in</div>
+                      <div className="font-semibold">Email</div>
+                      <div className="text-gray-600">hello@timelessaesthetics.in</div>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
                     <CheckCircle className="text-black mt-1" size={20} />
                     <div>
-                      <div className="font-semibold">HARERA Registered</div>
-                      <div className="text-gray-600">Reg No: /Ext1/2023/222</div>
+                      <div className="font-semibold">Trusted by 10,000+ Clients</div>
+                      <div className="text-gray-600">
+                        Certified clinic with international-grade treatments
+                      </div>
                     </div>
                   </div>
                 </CardContent>
               </Card>
 
               {/* Why Choose Us */}
-              <div className="p-6 rounded-2xl text-white shadow-lg" style={{ backgroundColor: "#00060eff" }}>
-                <h3 className="text-xl font-semibold mb-3">Why Choose T&T Realty?</h3>
+              <div className="p-6 rounded-2xl text-white shadow-lg bg-gradient-to-r from-black to-gray-800">
+                <h3 className="text-xl font-semibold mb-3">Why Choose Timeless Aesthetics?</h3>
                 <ul className="space-y-2 text-sm">
-                  <li>✓ 10+ Years of Experience</li>
-                  <li>✓ 2000+ Satisfied Customers</li>
-                  <li>✓ HARERA Registered Company</li>
-                  <li>✓ End-to-end Property Solutions</li>
-                  <li>✓ Transparent Dealings</li>
+                  <li>✓ Advanced Laser & Skin Treatments</li>
+                  <li>✓ Personalized Consultation</li>
+                  <li>✓ Safe, FDA-Approved Equipment</li>
+                  <li>✓ Highly Trained Dermatologists</li>
+                  <li>✓ Luxurious & Hygienic Clinic Environment</li>
                 </ul>
               </div>
             </div>

@@ -18,46 +18,7 @@ interface Project {
 }
 
 const projects: Project[] = [
-  { 
-    id: 1, 
-    title: 'Residences', 
-    image: Project1, 
-    description: 'Modern residences with pool and landscaped garden.',
-    price: '₹2.75 Cr onwards',
-    location: 'Gurgaon, Sector 62',
-    size: '4BHK RESIDENCES',
-    status: 'Ready to Move'
-  },
-  { 
-    id: 2, 
-    title: 'Apartment', 
-    image: Project2, 
-    description: 'High-rise apartments in the city center with world-class amenities.',
-    price: '₹2.51 Cr onwards',
-    location: 'Noida, Sector 150',
-    size: '3BHK+ & 4BHK',
-    status: 'Under Construction'
-  },
-  { 
-    id: 3, 
-    title: 'Rental Space', 
-    image: Project3, 
-    description: 'Premium commercial rental space designed for modern businesses.',
-    price: '₹60 LAKHS onwards',
-    location: 'Cyber City, Gurugram',
-    size: '2500 sq.ft',
-    status: 'Ready to Move'
-  },
-  { 
-    id: 4, 
-    title: 'Fully Furnished Apartments', 
-    image: Project4, 
-    description: 'Fully furnished apartments available in prime locations.',
-    price: '₹67.5 LAKHS onwards',
-    location: 'Sector-93, Gurgaon',
-    size: '1 BHK',
-    status: 'Available'
-  },
+  
 ];
 
 const Projects = () => {
@@ -75,7 +36,7 @@ const Projects = () => {
   <h2 className="text-4xl md:text-5xl font-extrabold tracking-wide mb-4">
     <span className="text-black">Find </span>
     <span className="bg-gradient-to-r from-yellow-500 to-secondary bg-clip-text text-transparent">
-      Your Space
+      Your Course
     </span>
   </h2>
   <span className="block h-1 w-24 bg-gradient-to-r from-yellow-500 to-secondary mx-auto mt-2 rounded-full"></span>

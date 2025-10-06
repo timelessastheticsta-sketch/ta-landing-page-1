@@ -1,10 +1,10 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { 
-  Home, 
-  Building2, 
-  ShoppingBag, 
-  MapPin, 
+  Sparkles, 
+  HeartPulse, 
+  GraduationCap, 
+  Scissors, 
   CheckCircle,
   ArrowRight
 } from 'lucide-react';
@@ -13,38 +13,48 @@ import { motion } from 'framer-motion';
 const Services = () => {
   const services = [
     {
-      icon: Home,
-      title: "Residential Properties",
-      description: "Premium apartments, villas, and plots in prime locations across Gurgaon and Delhi NCR.",
-      features: ["Ready to Move", "Under Construction", "Luxury Villas", "Affordable Housing"]
+      icon: GraduationCap,
+      title: "Courses",
+      description: "A long list of professional aesthetics courses taught by leading industry experts in India.",
+      features: [
+        "Permanent Makeup",
+        "Cosmetology",
+        "Facial Aesthetics",
+        "Fellowship Courses"
+      ]
     },
     {
-      icon: Building2,
-      title: "Commercial Properties",
-      description: "Strategic commercial spaces including offices, retail, and mixed-use developments.",
-      features: ["Office Spaces", "Retail Shops", "IT Parks", "Co-working Spaces"]
+      icon: HeartPulse,
+      title: "Treatments",
+      description: "The best non-surgical beauty treatments for skincare, aging, and rejuvenation.",
+      features: [
+        "Skin Rejuvenation",
+        "Anti-Aging Treatments",
+        "Permanent Makeup",
+        "Laser Treatments"
+      ]
     },
     {
-      icon: ShoppingBag,
-      title: "Retail Shops",
-      description: "High-footfall retail spaces in premium malls and commercial complexes.",
-      features: ["Mall Shops", "Street Retail", "Food Courts", "Brand Outlets"]
+      icon: Sparkles,
+      title: "Advanced Certifications",
+      description: "Government-certified, globally accredited professional training programs.",
+      features: [
+        "PG Diploma in Permanent Makeup",
+        "Master’s in Eyebrows & Scalp Micropigmentation",
+        "Certificate Courses in Lips, Brows & Lash Lift"
+      ]
     },
     {
-      icon: MapPin,
-      title: "SCO Plots",
-      description: "Shop-cum-Office plots in developing sectors with excellent growth potential.",
-      features: ["Prime Locations", "High ROI", "Flexible Usage", "Investment Grade"]
+      icon: Scissors,
+      title: "Workshops & Hands-on Training",
+      description: "Exclusive hands-on learning sessions with expert trainers for real-world experience.",
+      features: [
+        "Live Demonstrations",
+        "One-on-One Training",
+        "AAM Certified Trainers",
+        "Career Guidance"
+      ]
     }
-  ];
-
-  const developers = [
-    { name: "DLF", logo: "🏢" },
-    { name: "M3M", logo: "🏗️" },
-    { name: "Emaar", logo: "🌟" },
-    { name: "Vatika", logo: "🌿" },
-    { name: "Orris", logo: "⭐" },
-    { name: "Trump", logo: "🏛️" }
   ];
 
   const scrollToContact = () => {
@@ -56,19 +66,18 @@ const Services = () => {
     <section id="services" className="py-24 bg-gradient-to-b from-white to-gray-50">
       <div className="container mx-auto px-4">
 
-{/* Services Header */}
-<div className="text-center mb-16">
-  <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-800">
-    T and T Realty{' '}
-    <span className="bg-gradient-to-r from-yellow-500 to-secondary bg-clip-text text-transparent">
-      Services
-    </span>
-  </h2>
-  <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
-    Comprehensive real estate solutions tailored to your investment goals and lifestyle needs
-  </p>
-</div>
-
+        {/* Section Header */}
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-800">
+            Timeless Aesthetics{' '}
+            <span className="bg-gradient-to-r from-yellow-500 to-orange-400 bg-clip-text text-transparent">
+              Services
+            </span>
+          </h2>
+          <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
+            Expert cosmetic treatments and professional education – discover beauty and excellence at Timeless Aesthetics.
+          </p>
+        </div>
 
         {/* Services Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10 mb-20">
@@ -82,7 +91,7 @@ const Services = () => {
               <Card className="hover:shadow-xl hover:-translate-y-2 transition-all duration-300 rounded-2xl border border-gray-100">
                 <CardHeader className="text-center">
                   <div className="flex justify-center mb-4">
-                    <div className="p-5 bg-gradient-to-tr from-primary to-secondary rounded-full shadow-lg">
+                    <div className="p-5 bg-gradient-to-tr from-pink-500 to-yellow-400 rounded-full shadow-lg">
                       <service.icon size={32} className="text-white" />
                     </div>
                   </div>
@@ -104,35 +113,28 @@ const Services = () => {
           ))}
         </div>
 
-<motion.div 
-  initial={{ opacity: 0, scale: 0.95 }}
-  whileInView={{ opacity: 1, scale: 1 }}
-  transition={{ duration: 0.5 }}
-  className="p-10 md:p-16 rounded-3xl text-center text-black mb-20 shadow-xl bg-[radial-gradient(circle_at_center,_#FBE03F,_#F68C1E_80%)]"
->
-  <h3 className="text-3xl md:text-4xl font-bold mb-4">
-    Ready to Invest in Your Future?
-  </h3>
-  <p className="text-lg mb-6 max-w-2xl mx-auto">
-    Let our expert team guide you to the perfect property investment. 
-    Get personalized recommendations based on your budget and goals.
-  </p>
-  <Button 
-    size="lg"
-    onClick={scrollToContact}
-    className="bg-black text-white hover:bg-gray-800 font-semibold transition-all"
-  >
-Request a Callback
-    <ArrowRight className="ml-2" size={20} />
-  </Button>
-</motion.div>
-
-
-
-        {/* Our Associations */}
-
-
-
+        {/* CTA Section */}
+        <motion.div 
+          initial={{ opacity: 0, scale: 0.95 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5 }}
+          className="p-10 md:p-16 rounded-3xl text-center text-black mb-20 shadow-xl bg-[radial-gradient(circle_at_center,_#FBE03F,_#F68C1E_80%)]"
+        >
+          <h3 className="text-3xl md:text-4xl font-bold mb-4">
+            Ready to Begin Your Journey in Aesthetics?
+          </h3>
+          <p className="text-lg mb-6 max-w-2xl mx-auto">
+            Whether you’re aspiring to become an aesthetic expert or seeking professional beauty treatments, Timeless Aesthetics is your trusted partner.
+          </p>
+          <Button 
+            size="lg"
+            onClick={scrollToContact}
+            className="bg-black text-white hover:bg-gray-800 font-semibold transition-all"
+          >
+            Enroll or Book Now
+            <ArrowRight className="ml-2" size={20} />
+          </Button>
+        </motion.div>
 
       </div>
     </section>
