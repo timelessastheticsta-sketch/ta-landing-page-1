@@ -132,7 +132,7 @@ const Header = () => {
   className="bg-[#FCBD01] text-black transition-smooth hover:bg-[#FCBD01] w-full"
 >
   <a
-    href="tel:9654009966"
+    href="tel:+919654009966"
     className="text-black no-underline hover:text-black visited:text-black"
   >
     Call Now
