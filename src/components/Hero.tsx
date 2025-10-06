@@ -6,10 +6,10 @@ import LeadForm from '@/components/LeadForm';
 
 const Hero = () => {
   const stats = [
-    { id: 1, value: 2000, label: 'Happy Families', icon: <Users size={32} className="text-secondary" /> },
-    { id: 2, value: 500, label: 'Courses Sold', icon: <Building size={32} className="text-secondary" /> },
-    { id: 3, value: 10, label: 'Years Experience', icon: <TrendingUp size={32} className="text-secondary" /> },
-    { id: 4, value: 4.9, label: 'Client Rating', icon: <Star size={32} className="text-secondary" /> },
+    // { id: 1, value: 2000, label: 'Happy Families', icon: <Users size={32} className="text-secondary" /> },
+    // { id: 2, value: 500, label: 'Courses Sold', icon: <Building size={32} className="text-secondary" /> },
+    // { id: 3, value: 10, label: 'Years Experience', icon: <TrendingUp size={32} className="text-secondary" /> },
+    // { id: 4, value: 4.9, label: 'Client Rating', icon: <Star size={32} className="text-secondary" /> },
   ];
 
   const [counts, setCounts] = useState(stats.map(() => 0));
@@ -33,12 +33,16 @@ const Hero = () => {
   return (
     <>
       {/* Hero Section */}
-      <section id="home" className="relative min-h-screen flex items-center pt-20 md:pt-0">
+      <section id="home" className="relative h-[80vh] bg-black flex items-center pt-20 md:pt-0">
         {/* Desktop Background */}
-        <div
-          className="hidden md:block absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${heroBg})` }}
-        />
+        <div className="hidden md:block absolute inset-0">
+  <img
+    src={heroBg}
+    alt="Hero Desktop"
+    className="w-full h-full object-contain object-center"
+  />
+</div>
+
 
         {/* Mobile Background */}
         <div className="block md:hidden absolute inset-0 ">
@@ -47,7 +51,7 @@ const Hero = () => {
 
 
         {/* Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/40 to-primary/50"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-primary/20"></div>
 
         {/* Content */}
         <div className="relative z-10 container mx-auto px-4">
@@ -55,12 +59,12 @@ const Hero = () => {
             {/* Left side content */}
             <div>
               <h1 className="text-4xl md:text-6xl font-bold text-primary-foreground mb-6 leading-tight">
-              Masters in Permanent Makeup Course{' '}
-                <span className="text-secondary">Timeless Aesthetics</span>
+              {/* Masters in Permanent Makeup Course{' '} */}
+                <span className="text-secondary"></span>
               </h1>
 
               <p className="text-xl md:text-2xl text-primary-foreground/90 mb-8 max-w-2xl">
-              Become a Certified Permanent Makeup Artist
+              {/* Become a Certified Permanent Makeup Artist */}
 
               </p>
 
@@ -78,10 +82,7 @@ const Hero = () => {
               </div>
             </div>
 
-            {/* Right side - Lead Form (desktop only) */}
-            <div className="hidden md:flex justify-center md:justify-end">
-              <LeadForm variant="compact" transparent />
-            </div>
+
           </div>
         </div>
       </section>
