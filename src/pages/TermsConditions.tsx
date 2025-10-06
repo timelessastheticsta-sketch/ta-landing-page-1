@@ -29,7 +29,7 @@ const TermsConditions = () => {
                 <p>Incorporated: 2022</p>
                 <p>Type: Aesthetic & Cosmetic Service Provider</p>
                 <p>Address: 2nd Floor, Ameya One, Golf Course Road, Sector 42, Gurgaon, Haryana 122022</p>
-                <p>Contact: +91 7289863239 | info@timelessaesthetic.in</p>
+                <p>Contact: +91 9654009966 | info@timelessaesthetic.in</p>
               </div>
             </section>
 
@@ -156,7 +156,7 @@ const TermsConditions = () => {
                 <p><strong>Timeless Aesthetic</strong></p>
                 <p>Client Relations Department</p>
                 <p>Email: info@timelessaesthetic.in</p>
-                <p>Phone: +91 7289863239</p>
+                <p>Phone: +91 9654009966</p>
                 <p>Business Hours: Monday to Saturday, 9:00 AM to 6:00 PM</p>
               </div>
             </section>

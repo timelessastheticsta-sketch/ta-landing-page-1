@@ -115,7 +115,7 @@ const PrivacyPolicy = () => {
                 <p><strong>Timeless Aesthetic</strong></p>
                 <p>Customer Care Department</p>
                 <p>Email: support@timelessaesthetic.com</p>
-                <p>Phone: +91 7289863239</p>
+                <p>Phone: +91 9654009966</p>
                 <p>Business Hours: Monday to Saturday, 10:00 AM – 6:00 PM</p>
               </div>
             </section>

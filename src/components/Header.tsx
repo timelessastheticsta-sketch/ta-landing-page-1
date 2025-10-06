@@ -118,8 +118,7 @@ const Header = () => {
                 >
                   Services
                 </button>
-                <Link to="/career" className="text-white hover:text-[#FCBD01] transition-smooth text-left">Career</Link>
-                <Link to="/admin-resume" className="text-white hover:text-[#FCBD01] transition-smooth text-left">Admin Resumes</Link>
+
                 <button
                   onClick={() => scrollToSection('contact')}
                   className="text-white hover:text-[#FCBD01] transition-smooth text-left"
