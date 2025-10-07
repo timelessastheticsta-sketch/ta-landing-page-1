@@ -1,5 +1,7 @@
-const BASE_URL = import.meta.env.VITE_API_BASE_URL || 'https://ta-landing-page-backend-1-1.onrender.com';
+const BASE_URL = import.meta.env.VITE_API_BASE_URL;
 
+
+  
 export async function apiPost<TBody extends object, TResponse = unknown>(
   path: string,
   body: TBody
