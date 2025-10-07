@@ -1,4 +1,4 @@
-const BASE_URL = 'http://localhost:5000';
+const BASE_URL = 'https://ta-landing-page-backend-1-1.onrender.com';
 
 export async function apiPost<TBody extends object, TResponse = unknown>(
   path: string,
