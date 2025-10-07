@@ -1,4 +1,6 @@
-const BASE_URL = 'http://localhost:5000';
+// Prefer environment variable; fallback to hosted backend URL (never localhost in builds)
+const BASE_URL = (typeof import.meta !== 'undefined' && import.meta.env?.VITE_API_BASE_URL)
+  || 'https://ta-landing-page-backend-1-1.onrender.com';
 
 export async function apiPost<TBody extends object, TResponse = unknown>(
   path: string,
