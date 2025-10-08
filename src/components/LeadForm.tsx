@@ -57,19 +57,24 @@ const LeadForm = ({
 
     setIsSubmitting(true);
 
+    // Show success immediately for better UX
+    toast({
+      title: "Thank you for connecting 🖤",
+      description: "Our aesthetic consultant will reach out within 24 hours.",
+    });
+
     try {
-      const res = await fetch("https://tnt-leads-backend.onrender.com/api/leads", {
+      const res = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/leads`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ ...formData, source: "timeless-landing" }),
+        body: JSON.stringify({
+          ...formData,
+          source: import.meta.env.VITE_SOURCE || "Cosmotology"
+        }),
       });
 
-      await res.json();
-
-      toast({
-        title: "Thank you for connecting 🖤",
-        description: "Our aesthetic consultant will reach out within 24 hours.",
-      });
+      // Fire-and-forget; we don't block UX on response
+      await res.json().catch(() => undefined);
 
       setFormData({ name: "", email: "", phone: "", message: "" });
 
