@@ -18,8 +18,7 @@ const Footer = () => {
           <div className="space-y-4">
             <img src={tntLogo} alt="T&T Realty" className="h-20 w-auto" />
             <p className="text-sm leading-relaxed text-gray-300">
-              Leading real estate consultancy in Delhi NCR since 2014. 
-              Your trusted partner for premium properties and investments.
+India’s Leading Aesthetic Clinic and Academy — Redefining Beauty, Confidence, and Professional Excellence.
             </p>
             <div className="space-y-2 text-sm text-gray-300">
               <div className="flex items-center gap-2">
